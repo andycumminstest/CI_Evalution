@@ -2,7 +2,7 @@
   "name": "CI_Evalution",
   "version": "1.0.0",
   "dependencies": {
-    "jasmine-reporters": "^1.0.1",
+    // "jasmine-reporters": "^1.0.1",
     "protractor": "^1.6.1"
   }
 }

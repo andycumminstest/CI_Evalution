@@ -6,11 +6,11 @@ exports.config = {
   }
   ],
 
-   // Options to be passed to Jasmine-node.
-  onPrepare: function() {
-    require('jasmine-reporters');
-    jasmine.getEnv().addReporter(
-      new jasmine.JUnitXmlReporter(null, true, true, 'junit')
-    );
-  },
+  //  // Options to be passed to Jasmine-node.
+  // onPrepare: function() {
+  //   require('jasmine-reporters');
+  //   jasmine.getEnv().addReporter(
+  //     new jasmine.JUnitXmlReporter(null, true, true, 'junit')
+  //   );
+  //},
 };
