@@ -4,5 +4,13 @@ exports.config = {
   multiCapabilities: [{
     browserName: 'chrome'
   }
-  ]
+  ],
+
+   // Options to be passed to Jasmine-node.
+  onPrepare: function() {
+    require('jasmine-reporters');
+    jasmine.getEnv().addReporter(
+      new jasmine.JUnitXmlReporter(null, true, true, 'jasmineOutput')
+    );
+  },
 };

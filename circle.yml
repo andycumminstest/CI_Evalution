@@ -4,5 +4,7 @@ dependencies:
         timeout: 240
 test:
   override:
-    - mkdir -p $CIRCLE_TEST_REPORTS/cucumber
+    - mkdir -p jasmineOutput
+    - mkdir -p $CIRCLE_TEST_REPORTS/jasmineOutput
     - ./node_modules/protractor/bin/protractor conf.js --sauceUser $SAUCE_USERNAME --sauceKey $SAUCE_ACCESS_KEY --resultJsonOutputFile $CIRCLE_TEST_REPORTS/cucumber/results.json
+    - cp -R jasmineOutput $CIRCLE_TEST_REPORTS/jasmineOutput
