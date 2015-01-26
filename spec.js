@@ -25,7 +25,7 @@ describe('angularjs homepage', function() {
   it('should add four and six', function() {
 
     firstNumber.sendKeys(4);
-    secondNumber.sendKeys(5);
+    secondNumber.sendKeys(6);
 
     goButton.click();
 
