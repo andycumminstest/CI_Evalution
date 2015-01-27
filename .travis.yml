@@ -1,1 +1,4 @@
-install: npm install
+install:
+    - npm install
+script:
+    - ./node_modules/protractor/bin/protractor conf.js --sauceUser $SAUCE_USERNAME --sauceKey $SAUCE_ACCESS_KEY --resultJsonOutputFile results.json
